@@ -1,0 +1,99 @@
+
+/* by making the body a container, it will make positioning and creating the layout of the content inside the page easier to do*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #0d1120;
+}
+
+/* this is the header styling, it is special because it uses justify content to space out the hyperlinks easily*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b52b8;
+    padding: 10px
+}
+h1{
+    color:aliceblue
+}
+a{
+    color:aliceblue
+}
+
+/* the about me styling is minimal */
+
+#about{
+    flex: 0 1 20px;
+    color:aliceblue;
+    padding: 20px;
+    background-color: #3b52b8;
+}
+
+
+
+/* Here is the style for the organization of the work images */
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;              
+    padding: 20px;            
+    box-sizing: border-box;
+  }
+  
+  /* This is the top project styling, i made it appear bigger by giving it a larger width */
+  .top-project {
+    display: flex;
+    justify-content: center;
+    width: 125%;
+    max-width: 1500px;       
+  }
+  
+  /* This is the bottom project styling, i made it appear smaller by giving it a smaller width  */
+  .bottom-projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 75%;
+    max-width: 1000px;       
+    flex-wrap: wrap;         
+  }
+  
+  /* this here is what allows the images to scale with page */
+  #work a {
+    flex-grow: 1;             
+    max-width: 48%;           
+  }
+  
+  #work img {
+    width: 100%;             
+    height: auto;            
+    max-width: 100%;          
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .bottom-projects {
+      flex-direction: column;  
+      align-items: center;
+    }
+  
+    #work a {
+      max-width: 100%;         
+    }
+  }
+  
+/* Here is the style for the contact footer */
+
+#contact{
+    display: flex;
+    justify-content: space-around;
+    flex: 0 1 20px;
+    color:aliceblue;
+    padding: 20px;
+    background-color: #3b52b8;
+}

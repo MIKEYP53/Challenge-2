@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+
+    <!-- the header will contain the title and the hyperlinks. and the image below is seperated-->
+    <header>
+     <h1>MICHAEL PEREZ</h1>
+        <!-- below i use ids to manuever across the pages sections-->
+     <ul>
+        <a href="#about"> About Me</a>
+        <a href="#work"> My Work</a>
+        <a href="#contact"> Contact Me</a>
+     </ul>
+
+    </header>
+    <img src="assets/images/banner.png" alt="A beautiful scenery"/> 
+
+    <!-- the main will contain the about me and the work files-->
+    <main>
     
+    <!-- through this div i assign it the about id so it can be accessed through the hyperlink, and the about me is just simple text -->
+    <div id="about">
+
+    <p>ABOUT ME</p>
+    <p>
+        My name is michael perez, and i am a student of the UM bootcamp and of the coding major of MDC. 
+        As a humble and aspiring coder, I believe that the journey of learning is continuous, and I will always strive to grow and improve in my craft. 
+        I am passionate about coding and aspire to build a future where I can contribute to projects that are larger than myself. 
+        My goal is not just to succeed individually, but to become part of a collaborative foundation, making meaningful impacts in the tech world and 
+        contributing to the development of innovative solutions that shape the future</p>
+    </div>
+    
+    <!-- more interestingly i have the work section assigned with the work id so it as well can be accessed through the hyperlink. -->
+
+    <div id="work">
+        <!-- inside this work div i sepperated the first project and the other projects in different classes so i can manipulate the form with css and flexbox-->
+        <div class="top-project">
+          <a href="https://mikeyp53.github.io/Challenge-1/" target="_blank">
+            <img src="assets/Images/first_Project.png" alt="Clickable image of my first project.">
+          </a>
+        </div>
+      
+        <div class="bottom-projects">
+          <a href="https://mikeyp53.github.io/CSS-CHEAT-SHEET/" target="_blank">
+            <img src="assets/Images/css_cheat.png" alt="Clickable Image of my cheat sheet for css.">
+          </a>
+      
+          <a href="https://andresz25.github.io/PawMood-Project-1/" target="_blank">
+            <img src="assets/Images/pawMood.png" alt="Clickable Image of my first collaborative program.">
+          </a>
+        </div>
+      </div>
+      
+
+    </main>
+
+    <!-- the footer will contain the communication contact links-->
+    <footer id="contact">
+        <a href="tel:+13054690051">My Phone Number</a>
+        <a href="mailto:mprz646@gmail.com">My Buisness Email</a>
+        <a href="https://github.com/MIKEYP53">My Github Profile</a>
+    </footer>
 </body>
 </html>
